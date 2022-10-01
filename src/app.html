@@ -1,7 +1,15 @@
 <template>
   <require from="./styles/style.css"></require>
   <div>
-    <h1>This is the header</h1>
+    <h1 class="mb-5">iOS 16 test app</h1>
+    <p>Current phone: ${device}<br/> OS version: ${osVersion}</p>
+    
+
+    <div class="mb-5">
+    <small>If you want to restart from the home page, click this button. This will reload the entire app.</p>
+    <button click.delegate="reset()">Reset to homepage</button>
+    </div>
+  
     <router-view></router-view>
   </div>
 </template>

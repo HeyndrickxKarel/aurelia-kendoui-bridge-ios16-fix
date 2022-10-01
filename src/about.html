@@ -1,9 +1,12 @@
 <template>
   <require from="aurelia-kendoui-bridge/dropdownlist/dropdownlist"></require>
+  <require from="aurelia-kendoui-bridge/scheduler/scheduler"></require>
 
-  <h1>This is the about page</h1>
-  <p>Try to go back to the home page, if you get a white screen, it is broke</p>
-  <a route-href="route.bind: 'home';">Home</a>
+  <h5>This is the about page</h5>
+  <p>Try to use the router back to the home page with the link below, if you get a white screen, it is broke</p>
+  <div>
+    <a route-href="route.bind: 'home';">Home</a>
+  </div>
 
-  <ak-drop-down-list></ak-drop-down-list>
+  <ak-drop-down-list></ak-scheduler>
 </template>
